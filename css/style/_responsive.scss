@@ -1,0 +1,319 @@
+@media screen and (max-width: 900px) {
+  .container {
+    width: 100%;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  h1 {
+    padding-top: 20%;
+  }
+
+  header {
+    .logo {
+      position: absolute;
+      left: 10px;
+      width: 15%;
+    }
+
+    nav {
+      position: absolute;
+      right: 10px;
+      width: 100%;
+
+      .navbar {
+        flex-direction: column;
+        padding-right: 3rem;
+        padding-top: 3rem;
+        align-items: flex-end;
+
+        .toggle-button {
+          display: flex;
+          z-index: 100;
+        }
+
+        .navbar-links {
+          width: 80%;
+          display: none;
+
+          ul {
+            flex-direction: column;
+            width: 100%;
+
+            li {
+              text-align: center;
+              background-color: rgba(255, 255, 255, 0.781);
+
+              a {
+                font-size: 1.2rem;
+                color: $myBlack;
+              }
+            }
+          }
+        }
+
+        .navbar-links.active {
+          display: flex;
+          z-index: 100;
+        }
+      }
+    }
+
+    .header-strip {
+      display: block;
+      position: absolute;
+      top: 0;
+      z-index: 80;
+    }
+
+    .carousel {
+      display: none;
+    }
+  }
+
+  .footer-strip nav {
+    display: none;
+  }
+
+  /* home page */
+  .container .first_area {
+    width: 100%;
+  }
+
+  .container aside {
+    width: 100%;
+
+    img {
+      width: 50%;
+    }
+  }
+
+  .container .container-box {
+    flex-direction: column;
+    width: 100%;
+
+    .box1 {
+      width: 100%;
+      border-radius: 10%;
+    }
+  }
+
+  .grid,
+  .grid1 {
+    grid-template-columns: none;
+
+    .cards {
+      height: auto;
+      a {
+        display: flex;
+      }
+
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+
+  .grid1 {
+    display: block;
+
+    .grid3 {
+      margin-top: 5%;
+    }
+  }
+
+  /* contact page */
+  form .form-group input::placeholder,
+  form .form-group textarea::placeholder {
+    color: black;
+  }
+
+  label {
+    display: none;
+  }
+
+  /* media page */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+  }
+
+  .video {
+    width: 100%;
+  }
+
+  /* FAQ page */
+  .faq-container {
+    height: 80vh;
+  }
+}
+
+/* /////////// small screan ////////// */
+@media screen and (max-width: 600px) {
+  /*  .container {
+    width: 100%;
+  }
+
+  .flex {
+    flex-direction: column;
+  } */
+
+  h1 {
+    padding-top: 30%;
+  }
+
+  header {
+    .logo {
+      /* position: absolute;
+      left: 10px; */
+      top: 10px;
+      width: 20%;
+    }
+
+    /*  nav {
+      position: absolute;
+      right: 10px;
+      width: 100%;
+
+      .navbar {
+        flex-direction: column;
+        padding-right: 3rem;
+        padding-top: 3rem;
+        align-items: flex-end;
+
+        .toggle-button {
+          display: flex;
+          z-index: 100;
+        }
+ */
+    /*   .navbar-links {
+          width: 80%;
+          display: none;
+
+          ul {
+            flex-direction: column;
+            width: 100%;
+
+            li {
+              text-align: center;
+              background-color: rgba(255, 255, 255, 0.781);
+
+              a {
+                font-size: 1.2rem;
+                color: $myBlack;
+              }
+            }
+          }*/
+
+    /*   .navbar-links.active {
+          display: flex;
+          z-index: 100;
+        }
+      }
+    } */
+
+    .header-strip {
+      display: block;
+      position: absolute;
+      top: 20px;
+      z-index: 80;
+    }
+  }
+
+  /*  .carousel {
+      display: none;
+    }
+  }
+
+  .footer-strip nav {
+    display: none;
+  } */
+
+  /* home page */
+  /*  .container .first_area {
+    width: 100%;
+  }
+
+  .container aside {
+    width: 100%;
+
+    img {
+      width: 50%;
+    }
+  } */
+
+  .container .second-row {
+    padding: 0;
+  }
+
+  /*  .container .container-box {
+    flex-direction: column;
+    width: 100%;
+
+    .box1 {
+      width: 100%;
+      border-radius: 10%;
+    }
+  } */
+
+  .grid,
+  .grid1 {
+    grid-template-columns: none;
+
+    .cards {
+      height: auto;
+      margin: 0;
+      background: #9e86a5;
+
+      a {
+        display: flow-root;
+      }
+
+      img {
+        padding-top: 5%;
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+
+  .grid1 {
+    display: block;
+
+    .grid2,
+    .grid3 {
+      margin-top: 7%;
+    }
+  }
+
+  /* contact page */
+  form .form-group {
+    padding: 0;
+  }
+  /*  form .form-group input::placeholder,
+  form .form-group textarea::placeholder {
+    color: black;
+  }
+
+  label {
+    display: none;
+  } */
+
+  /* media page */
+  /*  .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 200px);
+    }
+
+    .video {
+      width: 100%;
+    } */
+
+  /* FAQ page */
+  .faq-container {
+    height: 80vh;
+  }
+}

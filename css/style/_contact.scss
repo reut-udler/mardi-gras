@@ -37,14 +37,3 @@ form {
     }
   }
 }
-
-@media screen and (max-width: 900px) {
-  form .form-group input::placeholder,
-  form .form-group textarea::placeholder {
-    color: black;
-  }
-
-  label {
-    display: none;
-  }
-}
