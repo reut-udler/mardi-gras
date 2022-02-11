@@ -580,7 +580,7 @@ aside .aside_box h4 {
   padding: 20px 0;
 }
 
-.third_area .container-box .box:hover {
+.third_area .container-box .box1:hover {
   -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
           box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   background: #ab88b4;
@@ -595,7 +595,6 @@ aside .aside_box h4 {
 
 .fourth_area h2,
 .fourth_area h5 {
-  font-family: "Pattaya";
   color: #9453a6;
 }
 
@@ -634,6 +633,7 @@ aside .aside_box h4 {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   cursor: pointer;
+  margin-top: 2rem;
 }
 
 .cards:hover {
