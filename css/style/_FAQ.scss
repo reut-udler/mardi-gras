@@ -1,0 +1,44 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .faq {
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid $myPurple;
+    cursor: pointer;
+    align-items: start;
+
+    .question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: $myGreen;
+    }
+
+    .answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 1.4s ease;
+
+      p {
+        padding-top: 1rem;
+        line-height: 1.6;
+        font-size: 1.4rem;
+        color: $myPurple;
+      }
+    }
+  }
+
+  .faq.active {
+    .answer {
+      max-height: 300px;
+    }
+
+    .bi-caret-down-fill {
+      transform: rotate(180deg);
+      transition: transform 0.5s ease-in;
+    }
+  }
+}

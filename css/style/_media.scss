@@ -1,0 +1,52 @@
+@import "./common";
+
+h2 {
+  color: $myGreen;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  justify-content: center;
+  align-content: center;
+  column-gap: 10px;
+  row-gap: 10px;
+
+  img {
+    width: 100%;
+  }
+}
+
+#lightbox {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+
+  img {
+    width: 30%;
+    padding: 4px;
+    background-color: $myPurple;
+    border: 3px solid $myGreen;
+  }
+}
+
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+  }
+
+  .video {
+    width: 100%;
+  }
+}
