@@ -1345,5 +1345,8 @@ form .form-group button {
   form .form-group textarea::placeholder {
     color: black;
   }
+  label {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
