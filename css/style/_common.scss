@@ -6,6 +6,10 @@ body {
   background: $myWhite;
   margin: 0;
   font-family: $mySmFont;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  z-index: 90;
 }
 
 h1 {
@@ -114,6 +118,7 @@ header {
 footer {
   .footer-strip {
     background-color: $myPurple;
+    margin-top: 1px;
 
     a {
       color: $myBlack;
